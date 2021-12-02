@@ -25,7 +25,7 @@ code {
   margin: 0 auto;
 }
 .inputDiv input {
-  width: 90%;
+  width: 80%;
   margin-top: 20px;
   margin-right: 10px;
   font-size: 1.5rem;
@@ -34,14 +34,17 @@ code {
 .inputDiv button {
   font-size: 1.5rem;
   padding: 5px;
-  width: 35px;
+  width: 30px;
   font-weight: 900;
 }
 .inputDiv button:hover {
   color: white;
   background-color: black;
 }
-
+.inputDiv button:last-child {
+  width: 40px;
+  margin-left: 5px;
+}
 /* list div-container */
 .listDiv {
   width: 80%;
