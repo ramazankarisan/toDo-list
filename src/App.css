@@ -59,6 +59,10 @@ code {
   height: 2rem;
   align-items: center;
 }
+.listDiv ol li p {
+  width: 100%;
+  overflow: hidden;
+}
 
 /* 3 small little buttons container */
 
@@ -70,7 +74,7 @@ code {
   align-items: center;
 }
 .smallButtonsDiv * {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .smallButtonsDiv *:hover {
   background: brown;

@@ -32,10 +32,13 @@ const List = () => {
     input.current.value = ""
   }
   const handleEdit = (id) => {
-    const targetItem = todos.find(item => item.id === id);
-    input.current.value = targetItem.text
+    if (input.current.value === '') {
 
-    handleDelete(id);
+      const targetItem = todos.find(item => item.id === id);
+      input.current.value = targetItem.text
+
+      handleDelete(id);
+    } else { return }
 
   }
   return (

@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Todo = ({ handleEdit, item, handleDelete, handleToggleDone }) => {
+  const styles = {
+    textDecoration: 'line-through',
+    textDecorationColor: 'red'
+  }
+
   return (
     <li>
-      <p style={{ textDecoration: item.done && 'line-through' }}>
+      <p style={item.done ? styles : {}}>
         {item.text}
       </p>
       <div className="smallButtonsDiv">
