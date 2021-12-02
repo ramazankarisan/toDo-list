@@ -19,8 +19,7 @@ const List = () => {
     todos.filter(item => item.id == id).forEach(item => {
       setDeletedObj({ id: id, text: item.text, done: item.done })
     })
-    console.log(deletedObj);
-
+    
   }
   const handleTakeBack = () => {
     if (todos.find(item => item.id == deletedObj.id)) {
