@@ -23,7 +23,7 @@ function App() {
   ])
   return (
     <TodoContext.Provider value={{ todos, setTodos }}>
-      <div className="App">
+      <div className="main">
         <List />
       </div>
     </TodoContext.Provider>

@@ -36,12 +36,15 @@ const List = () => {
     input.current.value = targetItem.text
 
     handleDelete(id);
+
   }
   return (
     <>
-      <input type="text" ref={input} />
-      <button onClick={() => handleAdd(input.current.value)}>+</button>
-      <div className="App">
+      <div className="inputDiv">
+        <input type="text" ref={input} />
+        <button onClick={() => handleAdd(input.current.value)}>+</button>
+      </div>
+      <div className="listDiv">
         <ol>
           {todos.map(item => {
             return <Todo handleEdit={handleEdit} key={item.id} item={item} handleToggleDone={handleToggleDone} handleDelete={handleDelete} />
